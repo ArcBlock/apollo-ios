@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = 'Apollo'
   s.version      = `scripts/get-version.sh`
-  s.author       = 'Meteor Development Group'
-  s.homepage     = 'https://github.com/apollographql/apollo-ios'
+  s.author       = 'ArcBlock Inc.'
+  s.homepage     = 'https://github.com/ArcBlock/apollo-ios'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary      = "A GraphQL client for iOS, written in Swift."
 
-  s.source       = { :git => 'https://github.com/apollographql/apollo-ios.git', :tag => s.version }
+  s.source       = { :git => 'https://github.com/ArcBlock/apollo-ios.git', :tag => s.version }
 
   s.requires_arc = true
 
@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '3.0'
 
   s.source_files = 'Sources/Apollo/*.swift'
-  s.resource = 'scripts/check-and-run-apollo-cli.sh'
 
 end
