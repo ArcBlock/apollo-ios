@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/ArcBlock/apollo-ios.git', :tag => s.version }
 
   s.requires_arc = true
+  s.swift_version = '4.0'
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
